@@ -5,7 +5,7 @@ module Hydra::FileCharacterization::Characterizers
 
     protected
     def command
-      "#{tool_path} -i \"#{filename}\""
+      "#{tool_path} -i \"#{filename}\" -h xml"
     end
 
   end
