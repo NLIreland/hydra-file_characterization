@@ -15,7 +15,7 @@ module Hydra::FileCharacterization
     end
 
     def call
-      unless File.exists?(filename)
+      unless File.exist?(filename)
         raise Hydra::FileCharacterization::FileNotFoundError.new("File: #{filename} does not exist.")
       end
 
